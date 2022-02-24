@@ -7,9 +7,9 @@ import pro3 from '../../assets/pro3.jpeg'
 import ReviewCard from './ReviewCard'
 const Reviews = () => {
     const reviews = [
-        {id:1,name:'Hellen Jummy',country:'Palo Alto, CA',profile:`${pro1}`},
-        {id:1,name:'Isaac Oluwatemilorun',country:'Palo Alto, CA',profile:`${pro2}`},
-        {id:1,name:'Hellen Jummy',country:'Palo Alto, CA',profile:`${pro3}`},
+        {id:1,name:'Hellen Jummy',country:'Palo Alto, CA',flag:'US',profile:`${pro1}`},
+        {id:1,name:'Isaac Oluwatemilorun',country:'Palo Alto, CA',flag:'US',profile:`${pro2}`},
+        {id:1,name:'Hellen Jummy',country:'Palo Alto, CA',flag:'US',profile:`${pro3}`},
     ]
   return (
     <Container   maxWidth="xl">

@@ -4,22 +4,29 @@ import {
   Avatar,
   CardContent,
   Typography,
+  Stack,
 } from "@mui/material";
 import React from "react";
 import { makeStyles } from "@mui/styles";
+import Flags from 'country-flag-icons/react/3x2'
+
 const useStyles = makeStyles({
-    text:{
-        color:'#ffffff',
-        fontSize:'16px',
-        lineHeight:'24px',
-    },
-    title:{
-        color:'#ffffff',
-    },
-    subTitle:{
-        color:'#E5C558',
-    }
-})
+  text: {
+    color: "#ffffff",
+    fontSize: "16px",
+    lineHeight: "24px",
+  },
+  title: {
+    color: "#ffffff",
+  },
+  subTitle: {
+    color: "#E5C558",
+  },
+  flag:{
+      width:'24px',
+      marginRight:'8px'
+  }
+});
 
 const ReviewCard = ({ item }) => {
   const classes = useStyles();
@@ -33,12 +40,17 @@ const ReviewCard = ({ item }) => {
         }}
       >
         <CardHeader
-          avatar={<Avatar src={item.profile}/>}
+          avatar={<Avatar src={item.profile} />}
           title={<Typography className={classes.title}>{item.name}</Typography>}
-          subheader={<Typography className={classes.subTitle}>{item.country}</Typography>}
+          subheader={
+              <Stack direction='row'>
+            <Flags.US className={classes.flag}/>
+            <Typography className={classes.subTitle}>{item.country}</Typography>
+              </Stack>
+          }
         />
         <CardContent>
-          <Typography className={classes.text} variant=""  component="">
+          <Typography className={classes.text} variant="" component="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             deleniti minima, hic tenetur id odit omnis sunt earum quas soluta
             voluptate voluptas! Cupiditate, minus officia.
