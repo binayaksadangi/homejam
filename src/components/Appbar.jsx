@@ -2,12 +2,12 @@ import React from 'react'
 import { makeStyles } from '@mui/styles'
 import { AppBar, Container, IconButton, Toolbar } from '@mui/material'
 import SortIcon from '@mui/icons-material/Sort';
-
+import logo from '../assets/logo.svg'
 const useStyles = makeStyles((theme)=>({
    icon:{
          color: 'white',
    },
-   title:{
+   logo:{
        flexGrow:1,
    }
 }))
@@ -15,13 +15,14 @@ const Appbar = () => {
     const classes = useStyles();
   return (
     <div>
-        <AppBar style={{background:'none'}} elevation={0}>
+        <AppBar style={{background:'none',position:'fixed'}} elevation={0}>
             <Container  maxWidth="xl">
                 <Toolbar>
-                    <h2 className={classes.title}>Homejam</h2>
+                    <img src={logo} alt="" />
+{/*                    
                     <IconButton>
                         <SortIcon className={classes.icon}/>
-                    </IconButton>
+                    </IconButton> */}
                 </Toolbar>
             </Container>
         </AppBar>
