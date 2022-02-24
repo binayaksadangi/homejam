@@ -4,7 +4,7 @@ import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles({
     line:{
-        width: '5%',
+        width: '45px',
         height: '2px',
         backgroundColor: 'blue',
         

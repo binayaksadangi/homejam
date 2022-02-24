@@ -17,11 +17,10 @@ const Upcoming = () => {
   return (
     <Container  maxWidth="xl">
         <Heading title='Upcoming Shows'/>
-        <Grid container spacing={2} style={{flexDirection:'row'}}>
+        <Grid container spacing={2} >
             <Grid item container xs={12} spacing={2} style={{marginBottom:'144px'}}>
                 {upcoming.map(item=>(
                     <Grid item xs={12} md={3}>
-
                         <ProfileCard key={item.id} item={item}/>
                     </Grid>
                 ))}
