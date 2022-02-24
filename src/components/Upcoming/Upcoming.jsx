@@ -3,7 +3,7 @@ import {Grid,Container} from '@mui/material'
 import Heading from '../Heading/Heading'
 import ProfileCard from './ProfileCard'
 import benny from '../../assets/benny.jpeg'
- import andrea from '../../assets/andrea.jpeg'
+import andrea from '../../assets/andrea.jpeg'
 import shilpa from '../../assets/shilpa.jpeg'
 import vijay from '../../assets/vijay.jpeg'
 

@@ -37,6 +37,9 @@ const ReviewCard = ({ item }) => {
           background: "#0A0B1A",
           borderRadius: "16px",
           border: "2px solid #E5AF56",
+          boxShadow: '20px -14px 0px -5px rgba(39, 108, 115, 1)',
+          marginRight: "16px",
+
         }}
       >
         <CardHeader

@@ -55,7 +55,7 @@ const ProfileCard = ({item}) => {
     const classes = useStyles();
   return (
     <>
-        <Card sx={{background:"#111229",borderRadius:'8px',}}>
+        <Card sx={{background:"#111229",borderRadius:'8px', boxShadow: '20px -14px 0px -5px rgba(48, 26, 104, 1)',marginRight:'16px'}}>
            <CardMedia
            component="img"
            alt="green iguana"
