@@ -1,15 +1,13 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles'
-import { AppBar, Container, IconButton, Toolbar } from '@mui/material'
-import SortIcon from '@mui/icons-material/Sort';
+import { AppBar, Button, Container, IconButton, Toolbar, Typography } from '@mui/material'
+import SearchIcon from '@mui/icons-material/Search';
 import logo from '../assets/logo.svg'
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 const useStyles = makeStyles((theme)=>({
-   icon:{
-         color: 'white',
-   },
-   logo:{
-       flexGrow:1,
-   }
+    btn:{
+        color:'#ffffff',
+    }
 }))
 const Appbar = () => {
     const classes = useStyles();
@@ -18,11 +16,15 @@ const Appbar = () => {
         <AppBar style={{background:'none',position:'fixed'}} elevation={0}>
             <Container  maxWidth="xl">
                 <Toolbar>
-                    <img src={logo} alt="" />
-{/*                    
+                    <div style={{flexGrow:1}}>
+                          <img src={logo} alt="" />
+                    </div>
+                    <Button startIcon={<SearchIcon/>} style={{color:'white'}}>Search</Button>
+                    <Button style={{color:'white'}}>Help</Button>
+                    <Button style={{color:'white'}}>About</Button>
                     <IconButton>
-                        <SortIcon className={classes.icon}/>
-                    </IconButton> */}
+                        <ShoppingBagOutlinedIcon style={{color:'white'}}/>
+                    </IconButton>
                 </Toolbar>
             </Container>
         </AppBar>
